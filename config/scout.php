@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'driver' => env('SCOUT_DRIVER', 'algolia'),
+    'driver' => env('SCOUT_DRIVER', 'elasticsearch'),
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +77,7 @@ return [
     'elasticsearch' => [
         'index' => env('ELASTICSEARCH_INDEX', 'laravel'),
         'hosts' => [
-            env('ELASTICSEARCH_HOST', 'http://web.la.com'),
+            env('ELASTICSEARCH_HOST', 'http://localhost'),
         ],
     ],
 
